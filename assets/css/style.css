@@ -1,0 +1,30 @@
+#train-card {
+    margin-bottom:20px;
+}
+
+.blackHead {
+    background-color:black;
+    color:whitesmoke;
+}
+
+.jumbotron {
+    background-image: url("../images/All\ Aboard.gif");
+    height: 295px;
+}
+
+.app-title {
+    width: 500px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 55px;
+    background: rgb(255, 255, 255);
+    padding-top: 15px;
+}
+
+body {
+    background-image: url("../images/train_background.gif");
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.685);
+}

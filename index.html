@@ -1,0 +1,93 @@
+<!Doctype html>
+<html lang="eng-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Train Schedule</title>
+    <!--bootstrap and  css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  
+        <div class=" text-center jumbotron jumbotron-fluid ">
+            <div class="container">
+            <h1 class=" card app-title ">Do You Like Trains?!?!?</h1>
+            </div>
+        </div>
+        <div class = "container">
+        <div class="card" id="train-card">
+            <div class="card-header text-center blackHead">
+                  Current Train Schedule
+            </div>
+
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency(min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <!--Search Card-->
+        <div class="card" id = "search-card">
+            <div class="card-header text-center blackHead">
+                Add Train
+            </div>
+        
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                    <label for="name">Train Name </label>
+                    <input type="text" id="name" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group">
+                    <label for="role">Destination </label>
+                    <input type="text" id="destination" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group">
+                    <label for="start-date">First Train Time (HH:mm - military time) </label>
+                    <input type="text" class="form-control" id="start-time" placeholder="">
+                    </div>
+                    <div class="form-group">
+                    <label for="monthly-rate">Frequency (min) </label>
+                    <input type="text" class="form-control" id="frequency" placeholder="">
+                    </div>
+                </form>
+                <button class="btn btn-info" id="sub-button"> Submit</button>
+            </div><!--card body-->
+        </div><!--card-->
+     
+    </div><!--container-->
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBr2gqn4-4g3RJ1bPOzrpTRs7qTN8rHXEE",
+        authDomain: "train-schedule-88736.firebaseapp.com",
+        databaseURL: "https://train-schedule-88736.firebaseio.com",
+        projectId: "train-schedule-88736",
+        storageBucket: "train-schedule-88736.appspot.com",
+        messagingSenderId: "95794889306"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
+
